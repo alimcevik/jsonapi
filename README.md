@@ -1,5 +1,5 @@
 # Flutter JSON API (EN)
-Simple Json Api construction
+Simple JSON API usage
 
 ## Setup
  - Open **jsonapi** file with **Visual Studio Code**
@@ -7,7 +7,7 @@ Simple Json Api construction
  - And finally `flutter run`
 
 **Training Video on Youtube** 
-Subscribe and like => [Flutter JSON API Kullanımı](#)
+Subscribe and like => [Flutter JSON API Kullanımı](https://youtu.be/uMMtw1C2CGc)
 
 **Our Blog**
 Yazilim Karavani => [www.yazilimkaravani.net](https://www.yazilimkaravani.net)
@@ -15,7 +15,7 @@ Yazilim Karavani => [www.yazilimkaravani.net](https://www.yazilimkaravani.net)
 
 
 # Flutter JSON API (TR)
-Basit açılış ekranı yapımı
+Basit JSON API kullanımı
 
 ## Kurulum
  - **jsonapi** dosyasını **Visual Studio Code** ile açın
@@ -23,7 +23,7 @@ Basit açılış ekranı yapımı
  - Ve son olarak `flutter run`
 
 **Eğitim Videosu YouTube'da** 
-Abone olmayı ve beğenmeyi unutmayın => [Flutter JSON API Kullanımı](#)
+Abone olmayı ve beğenmeyi unutmayın => [Flutter JSON API Kullanımı](https://youtu.be/uMMtw1C2CGc)
 
 **Blogumuz**
 Yazılım Karavanı => [www.yazilimkaravani.net](https://www.yazilimkaravani.net)
