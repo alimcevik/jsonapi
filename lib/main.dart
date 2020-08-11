@@ -1,12 +1,11 @@
 import 'dart:convert';
+import 'package:api_json/model/loadData.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:jsonapi/model/loadData.dart';
 
 Future<LoadData> apiCall() async {
   final response = await http.get(
       'https://raw.githubusercontent.com/alimcevik/jsonapi/master/api.json');
-      //'http://jsonplaceholder.typicode.com/users/1');
   if (response.statusCode == 200) {
     return LoadData.fromJson(json.decode(response.body));
   } else {
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      showSemanticsDebugger: false,
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
@@ -48,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
         future: apiCall(),
         // ignore: missing_return
         builder: (context, snapshot) {
-          if (snapshot.data.username != null && snapshot.data.email != null) {
+          if (snapshot.hasData) {
             return Container(
                 child: Center(
                     child: Text(
@@ -60,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.orange),
             )));
           } else {
-            Center(child: Text('Yükleniyor'));
+            return Center(child: CircularProgressIndicator());
           }
         },
       ),
