@@ -5,7 +5,7 @@ import 'package:jsonapi/model/loadData.dart';
 
 Future<LoadData> apiCall() async {
   final response = await http.get(
-      'https://raw.githubusercontent.com/alimcevik/SplashScreen/master/api.json');
+      'https://raw.githubusercontent.com/alimcevik/jsonapi/master/api.json');
       //'http://jsonplaceholder.typicode.com/users/1');
   if (response.statusCode == 200) {
     return LoadData.fromJson(json.decode(response.body));
